@@ -1,0 +1,17 @@
+import pandas as pd
+
+# Create DataFrame
+data = {
+    "Name": ["Alice", "Bob", "Charlie"],
+    "Age": [25, 30, 35],
+    "Salary": [50000, 60000, 70000]
+}
+
+df = pd.DataFrame(data)
+
+# Display DataFrame
+print("DataFrame:\n", df)
+
+# Basic Operations
+print("\nAverage Age:", df["Age"].mean())
+print("Employees with Salary > 55000:\n", df[df["Salary"] > 55000])
